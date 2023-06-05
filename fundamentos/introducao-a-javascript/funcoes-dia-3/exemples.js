@@ -12,7 +12,7 @@ function sum(number1, number2) {
 
 console.log(sum(15, 25));
 
-////////////////////////////////////////////////////////////////////////////////////////////
+// OU
 
 function sum(num1, num2) {
   return num1 + num2;
