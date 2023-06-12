@@ -9,3 +9,4 @@
 //console.log(document.querySelector(".emergency-tasks"));
 
 
+console.log(document.querySelectorAll0("div"));
