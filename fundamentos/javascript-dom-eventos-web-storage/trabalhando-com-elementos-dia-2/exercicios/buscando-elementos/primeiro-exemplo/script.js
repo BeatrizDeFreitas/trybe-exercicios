@@ -1,5 +1,5 @@
 // arquivo script.js
+const firstChild = document.getElementById('first-child');
+const parent = firstChild.parentNode;
 
-console.log(document.getElementById('start').nextSibling) // nó
-
-console.log(document.getElementById('start').nextElementSibling) // <p>elemento</p>
+console.log(parent); // <ul id="parent">…</ul>
