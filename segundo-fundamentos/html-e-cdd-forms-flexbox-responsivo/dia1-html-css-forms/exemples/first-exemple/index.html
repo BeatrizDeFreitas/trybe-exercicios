@@ -1,16 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
 <body>
+    <header>
     <h1>Formulário</h1>
+    </header>
+
     <form action="" method="get">
-        <input type="text" name="texto">
-        <button type="submit">Enviar</button>
-        
+
+        <div id="first">
+            <label for="input-text">Digite seu nome</label>
+            <input type="text" placeholder="digite algo" name="texto" required value="Yuzu" id="input-text">
+            <button type="submit">Enviar</button>
+            <br>
+            <br>
+            <textarea name="area" id="text-area" placeholder="Tell us about your favorite figure skater" rows="10" cols="30"></textarea>
+        </div>
+        <br>
+        <div id="second">
+            <label for="YH"> <input type="checkbox" id="YH" value="YZ" name="skaters"> Yuzuru Hanyu</label>
+            <label for="SU"><label> <input type="checkbox" id="SU" value="SU" name="skaters"> Shoma Uno </label>
+            <label for="KM"> <input type="checkbox" id="KM" value="KM" name="skaters"> Keegan Messing </label>
+            <label for="JF"> <input type="checkbox" id="JF" value="JF" name="skaters"> Javier Fernández </label>
+        </div>
+        <br>
+        <div id="third">
+            <input type="radio" name="olympics"> Olympics 2022
+            <input type="radio" name="olympics"> Olympics 2018
+            <input type="radio" name="olympics"> Olympics 2014
+            <input type="radio" name="olympics"> Olympics 2010
+        </div>
+        <br>
+        <div id="fourth">
+            <label for="Programs"> Programs
+            <select name="program" id="program">
+            <option value="Notte Stellata">Notte Stellata</option>
+            <option value="Origin">Origin</option>
+            <option value="Masquerade">Masquerade</option>
+            <option value="Firebird">Firebird</option>
+            </select>
+            </label>
+        </div>
+        <br>
+        <div>
+            <label>Senha: </label>
+            <input type="password" name="password"> 
+        </div>
+        <br>
+        <div>
+            <input type="file" name="file" id="file">
+        </div>
+        <br>
+        <button type="submit" class="submit">Submit</button>
     </form>
 </body>
 </html>
