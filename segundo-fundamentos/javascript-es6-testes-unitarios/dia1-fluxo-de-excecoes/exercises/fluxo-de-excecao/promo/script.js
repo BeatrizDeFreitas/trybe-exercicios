@@ -66,6 +66,7 @@ const checkNumber = (number) => {
     }
   }
 
+//verifica se o numero colocado no input é entre 1 e 10
   const checkValidRange = (number) => {
     if (number < 1 || number > 10) {
         throw new Error('É necessário digitar um número entre 1 e 10');
