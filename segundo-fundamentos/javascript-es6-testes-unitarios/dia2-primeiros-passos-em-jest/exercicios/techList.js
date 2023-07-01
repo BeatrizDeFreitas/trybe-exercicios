@@ -1,45 +1,17 @@
-{
-    tech: 'nomeTecnologia';
-    name: name;
-  };
 
+const techList = (arrayTechnologies, name) => {
+  if (arrayTechnologies.length === 0) return 'Vazio!';
+  const sortedArray = arrayTechnologies.sort();
+  const technologyList = [];
 
-  const techList = require('./techList.js');
+  for (let index = 0; index < sortedArray.length; index += 1) {
+    technologyList.push({
+      tech: sortedArray[index],
+      name,
+    });
+  }
 
-describe('Testa a função techList', () => {
-  it('Testa se a função techList é definida', () => {
-    expect(techList).toBeDefined();
-  });
-  it('Testa se techList é uma função', () => {
-    expect(typeof techList).toBe('function');
-  });
-  it('Lista com 5 tecnologias deve retornar uma lista de objetos ordenados', () => {
-    expect(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas')).toEqual([
-      {
-        tech: 'CSS',
-        name: 'Lucas'
-      },
-      {
-        tech: 'HTML',
-        name: 'Lucas'
-      },
-      {
-        tech: 'JavaScript',
-        name: 'Lucas'
-      },
-      {
-        tech: 'Jest',
-        name: 'Lucas'
-      },
-      {
-        tech: 'React',
-        name: 'Lucas'
-      }
-    ]);
-  });
-  it('Lista com 0 tecnologia deve retornar uma mensagem de erro "Vazio!"', () => {
-    expect(techList([], 'Lucas')).toBe('Vazio!');
-  });
-});
+  return technologyList;
+};
 
 module.exports = techList;
